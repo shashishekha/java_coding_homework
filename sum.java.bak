@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+class sum
+{
+	
+	public int summ(int n, int arr[]){
+		int add =0;
+		for(int num: arr){
+			add +=num;
+		}
+		return add;
+	}
+	
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the number of integers to be added: ");
+		int n = sc.nextInt();
+		int arr[] = new int[n];
+		System.out.println("Enter the integers: ");
+		for(int i=0; i<n; i++){
+			arr[i]=sc.nextInt();
+		}
+
+		int sum =0;
+		for(int num:arr){
+			sum +=num;}
+
+		//System.out.println("the sum of the integers are: "+ sum);
+		int k = summ(n,arr);
+
+		//int k = summ(n,arr);
+		//sum obj = new sum();
+		
+		//int m = obj.summ(n,arr);
+		System.out.println("The sum of the integers are: "+ k);
+		
+
+}
+}
+
+
