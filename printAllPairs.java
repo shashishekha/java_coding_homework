@@ -27,7 +27,7 @@ class printAllPairs
 
 //9. ans : 
 
-	public static void rotateArrayLeft(int n, int arr[], int k){
+/*	public static void rotateArrayLeft(int n, int arr[], int k){
 		
 		// Example: arr = [10, 20, 30, 40] ? Output = [20, 30, 40, 10]
 		int rotatedArray= new int[];
@@ -36,10 +36,12 @@ class printAllPairs
 
 	}
 
+	*/
 
 
 
-	public static void countnumbers(int n, int arr[]){
+
+	public static void frequency(int n, int arr[]){
 			Arrays.sort(arr);
 			int count =1;
 			for(int i=0; i<n; i++ ){
@@ -118,10 +120,10 @@ class printAllPairs
 		// System.out.println(m);
 		// if(m==0)System.out.println("NO");
 		// else System.out.println("YES");
-		countnumbers(n,arr);
-		System.out.println();
-		findDuplicates(n,arr);
-		rotateArrayLeft(n,arr,k);
+		frequency(n,arr);
+		//System.out.println();
+		//findDuplicates(n,arr);
+		//rotateArrayLeft(n,arr,k);
 
 
 	}

@@ -7,6 +7,9 @@ class printAllPairs
 //10. ans: 
 
 	public static void findDuplicates(int n, int arr[]){
+
+	
+
 		Arrays.sort(arr);
 		int dupp[]= new int[n];
 		int j=0;
@@ -24,7 +27,16 @@ class printAllPairs
 
 //9. ans : 
 
-	//public static void rotateArrayLeft(int n, int arr[]){}
+/*	public static void rotateArrayLeft(int n, int arr[], int k){
+		
+		// Example: arr = [10, 20, 30, 40] ? Output = [20, 30, 40, 10]
+		int rotatedArray= new int[];
+		for(int =0; i<n; i++){
+			rotatedArray[i] = arr[n-k];
+
+	}
+
+	*/
 
 
 
@@ -77,7 +89,11 @@ class printAllPairs
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of the array: ");
+
 		int n = sc.nextInt();
+		System.out.println("Enter the number of times the array to be left rotated: ");
+		int k = sc.nextInt();
 		int arr [] = new int[n];
 		int Printarr []=new int[n];
 		for(int i=0; i<n; i++){
@@ -105,8 +121,10 @@ class printAllPairs
 		// if(m==0)System.out.println("NO");
 		// else System.out.println("YES");
 		countnumbers(n,arr);
-		System.out.println();
-		findDuplicates(n,arr);
+		//System.out.println();
+		//findDuplicates(n,arr);
+		//rotateArrayLeft(n,arr,k);
+
 
 	}
 }
